@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  dev-container:
+    build:
+      dockerfile: ./.devcontainer/Dockerfile
+      context: ./
+    volumes:
+      - .:/workspaces/antropic:cached
+    command: /bin/sh -c "while sleep 1000; do :; done"
