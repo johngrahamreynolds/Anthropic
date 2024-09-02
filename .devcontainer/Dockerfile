@@ -48,10 +48,10 @@ RUN apt-get autoremove -y \
     && rm -rf /tmp/dockerbuild
 
 # Set Workspace directory
-ARG WORKSPACE=/workspace/anthropic-sandbox
+ARG WORKSPACE=/workspaces/Anthropic
 ENV WORKSPACE=${WORKSPACE}
 
-# COPY poetry.lock pyproject.toml ${WORKSPACE}/
+COPY poetry.lock pyproject.toml ${WORKSPACE}/
 # RUN cd $WORKSPACE && poetry install --no-root
 
 WORKDIR ${WORKSPACE}

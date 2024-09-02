@@ -1,0 +1,24 @@
+{
+	"name": "Anthropic",
+	"dockerComposeFile": [
+		"../docker-compose.yml"
+	],
+	"service": "dev-container",
+	"postCreateCommand": "cd $WORKSPACE && poetry install",
+    // "postCreateCommand": "cd $WORKSPACE",
+	"workspaceFolder": "/workspaces/Anthropic",
+	"customizations": {
+		"vscode": {
+			"settings": {
+				"python.venvPath": "/root/.cache/pypoetry/virtualenvs/"
+			},
+			"extensions": [
+				"ms-python.python",
+				"ms-python.vscode-pylance",
+				"ms-python.black-formatter",
+				"ms-python.flake8",
+				"ms-python.mypy-type-checker"
+			]
+		}
+	}
+}

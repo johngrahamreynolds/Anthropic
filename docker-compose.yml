@@ -1,4 +1,4 @@
-version: '3'
+version: '4'
 
 services:
   dev-container:
@@ -6,5 +6,5 @@ services:
       dockerfile: ./.devcontainer/Dockerfile
       context: ./
     volumes:
-      - .:/workspaces/antropic:cached
+      - .:/workspaces/Anthropic:cached
     command: /bin/sh -c "while sleep 1000; do :; done"

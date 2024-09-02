@@ -1,0 +1,10 @@
+**/.mypy_cache
+**/*.egg-info
+**/__pycache__
+**/.pytest_cache
+.venv
+test_output.xml
+dist/
+build/
+**/derby.log
+**/metastore_db

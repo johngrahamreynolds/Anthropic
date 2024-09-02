@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "claudebox"
+version = "0.1.0"
+description = "Personal project utilizing the Anthropic SDK for testing Claude's responses to a multitude of (predominantly scientific) queries"
+authors = ["John Graham Reynolds <johngrahamreynolds@gmail.com>"]
+license = "N/A"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+anthropic = "^0.34.1"
+pytz = "2022.7"
+aiohttp = "^3.10.5"
+dataclasses-json = "^0.6.7"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.2"
+black = "^24.8.0"
+flake8 = "^7.1.1"
+mypy = "^1.11.2"
+pytest-asyncio = "^0.24.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
