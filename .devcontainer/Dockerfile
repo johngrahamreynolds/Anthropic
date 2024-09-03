@@ -57,6 +57,7 @@ COPY poetry.lock pyproject.toml ${WORKSPACE}/
 WORKDIR ${WORKSPACE}
 
 ENV PATH=$PATH:/root/.local/bin/
-ENV ANTHROPIC_API_KEY=redacated
+ENV PYTHONPATH=$PYTHONPATH:/workspaces/Anthropic
+ENV ANTHROPIC_API_KEY=redacated!-must-be-set-by-user
 
 
