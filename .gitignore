@@ -8,3 +8,4 @@ dist/
 build/
 **/derby.log
 **/metastore_db
+ANTHROPIC_API_KEY.txt
