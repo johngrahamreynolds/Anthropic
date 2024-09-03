@@ -17,7 +17,8 @@
 				"ms-python.vscode-pylance",
 				"ms-python.black-formatter",
 				"ms-python.flake8",
-				"ms-python.mypy-type-checker"
+				"ms-python.mypy-type-checker",
+				"shd101wyy.markdown-preview-enhanced"
 			]
 		}
 	}
