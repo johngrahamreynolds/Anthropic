@@ -4,8 +4,7 @@
 		"../docker-compose.yml"
 	],
 	"service": "dev-container",
-	"postCreateCommand": "cd $WORKSPACE && poetry install",
-    // "postCreateCommand": "cd $WORKSPACE",
+	"postCreateCommand": "cd $WORKSPACE && poetry install --no-root",
 	"workspaceFolder": "/workspaces/Anthropic",
 	"customizations": {
 		"vscode": {
@@ -18,7 +17,8 @@
 				"ms-python.black-formatter",
 				"ms-python.flake8",
 				"ms-python.mypy-type-checker",
-				"shd101wyy.markdown-preview-enhanced"
+				"shd101wyy.markdown-preview-enhanced",
+				"james-yu.latex-workshop"
 			]
 		}
 	}
