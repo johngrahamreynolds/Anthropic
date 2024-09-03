@@ -56,7 +56,7 @@ class ClaudeModel:
 
         message = claude_client.messages.create(
             model=self.claude_model,
-            max_tokens=1000,
+            max_tokens=self.max_tokens,
             temperature=0,
             system=self.system_prompt,
             messages=[
