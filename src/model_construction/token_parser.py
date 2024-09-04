@@ -32,9 +32,9 @@ class LatexParser(TokenParser):
         latex = tokens.content[0].text  # type: ignore
         
         dir_path = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
-        latex_dir_path = dir_path + '/latex/'
+        latex_dir_path = dir_path + '/latex'
         
-        with open(latex_dir_path + file_name + '.tex', 'w') as file:
+        with open(latex_dir_path + '/' + file_name + '.tex', 'w') as file:
             file.write(latex)
 
         # subprocess.call([f"./latex_compiler.sh"])
