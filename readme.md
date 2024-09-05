@@ -1,5 +1,12 @@
 ## Anthropic SDK Sandbox
-This project contains various blocks of code utilizing the Anthropic SDK for testing Claude's responses to a multitude of (predominantly scientific) queries across different model versions.
+
+### Overview
+This project contains a virtualized environment utilizing the Anthropic SDK for testing Claude's responses to a multitude of (predominantly scientific) queries across different model versions.
+
+### LaTeX Compilation and PDF Rendering
+We blah blah blah
+
+### Generated Code Execution environment
 
 ## Essential First Step
 Before executing any queries to Claude, the user must first set set their environment variable `ANTHROPIC_API_KEY` to an active Anthropic API key. 
